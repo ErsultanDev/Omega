@@ -23,6 +23,16 @@
             font-size: 17px;
         }
 
+        .b2_start {
+            width: 800px;
+        }
+
+        .b2_end {
+            img {
+                width: 100%;
+            }
+        }
+
         .b2_omega {
             display: flex;
             align-items: center;
@@ -48,18 +58,35 @@
             width: 400px;
             margin: 0 auto;
 
+            .b2_start {
+                width: auto;
+            }
+
+            .b2_end {
+                width: auto;
+            }
+
             img {
                 width: 100%;
             }
         }
     }
 }
+
 @media (max-width:425px) {
     .b2 {
         .b2_wrapper {
             width: 300px;
 
-    
+            .b2_end {
+                margin-top: 30px;
+            }
+            .b2_omega{
+                p{
+                    font-size: 22px;
+                }
+            }
+
         }
     }
 }
