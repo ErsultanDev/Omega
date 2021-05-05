@@ -1,0 +1,143 @@
+//main: ..//style.less
+
+.btn {
+    background-color: #FF6D50;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 44px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 20px 11px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form_desc {
+    text-align: center;
+    margin-bottom: 10px;
+
+    span {
+        color: #FF6D50;
+        font-family: "MuseoSansBlack";
+    }
+
+    p {
+        color: #686868;
+        margin-top: 10px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+
+    input,
+    select {
+        border-radius: 44px;
+        border: 1px solid #FF6D50;
+        padding: 18px 30px;
+        font-size: 18px;
+        margin: 6px 0;
+        width: 350px;
+    }
+
+
+
+    .btn {
+        margin: 30px;
+    }
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    left: 172px;
+    color: #FF6D50;
+    padding: 10px 20px;
+
+    .price_text {
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .newPrice {
+        font-size: 67px;
+        font-weight: 700;
+        font-family: "MuseoSansBlack";
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width:966px) {
+    .price {
+        top: 17px;
+        left: 83px;
+
+        .newPrice {
+            font-size: 30px;
+        }
+    }
+
+    .form {
+        width: 300px;
+        margin: 0 auto;
+
+        input,
+        select {
+            width: 300px;
+            margin: 10px auto;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .container {
+        padding: 0;
+    }
+
+    .price {
+        top: 30px;
+        left: 130px;
+    }
+}
+
+@media screen and(max-width:375px) {
+    .price {
+        top: 30px;
+        left: 113px;
+    }
+
+    .form {
+
+        input,
+        select {
+            width: 250px;
+        }
+
+        .btn {
+            max-width: 280px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .price {
+        top: 28px;
+        left: 88px;
+    }
+}

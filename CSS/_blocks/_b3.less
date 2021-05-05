@@ -1,0 +1,59 @@
+//main: ..//style.less
+.b3 {
+    padding: 90px 0;
+
+    .b3_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .b3_card {
+            width: 300px;
+
+            .b3_pic {
+                margin-bottom: 50px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h2 {
+                color: #FF6D50;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+                font-family: "MuseoSansBlack";
+            }
+
+            .b3_item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                p {
+                    font-family: "MuseoSansBold";
+                }
+
+                .b3_icon {
+                    margin-right: 10px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (max-width:966px) {
+    .b3 {
+        padding: 30px 0;
+        .b3_wrapper {
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+
+            .b3_card {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

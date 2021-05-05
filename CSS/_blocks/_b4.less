@@ -1,0 +1,68 @@
+//main: ..//style.less
+
+.b4 {
+    padding: 90px 0;
+    background: url(.././images/dest/b4bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .b4_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .b4_start {
+            width: 500px;
+
+            h2 {
+                color: #FF6D50;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                font-family: "MuseoSansBlack";
+
+            }
+
+            p {
+                span {
+                    color: #FF6D50;
+                }
+
+                margin-bottom: 30px;
+            }
+        }
+
+        .b4_end {
+            width: 500px;
+
+            img {
+                width: 100%;
+            }
+
+            .b4_btn {
+                width: 260px;
+                margin: 30px auto auto auto;
+
+                .btn {
+                    padding: 10px 70px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b4 {
+        .b4_wrapper {
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+
+            .b4_start {
+                width: auto;
+            }
+
+            .b4_end {
+                width: auto;
+            }
+        }
+    }
+}
